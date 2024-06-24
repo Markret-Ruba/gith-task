@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj1 = {
+    name: "John",
+    age: 23,
+    
+}
+
+// Define the second object
+var obj2 = {
+    age: 23,
+   // name:"Reji",
+}
+
+// Define the function check
+function check(obj1, obj2) {
+
+    // Iterate the obj2 using for..in
+    for (key in obj2) {
+
+        // Check if both objects do 
+        // not have the equal values
+        // of same key
+        if (obj1[key] !== obj2[key]) {
+            return false;
+        }
+    }
+    return true
+}
+
+// Call the function
+console.log(check(obj1, obj2))
+
+    </script>
+</body>
+</html>
